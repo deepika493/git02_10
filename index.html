@@ -1,0 +1,50 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+    <b>User Id:</b><input />
+</p>
+
+<p>
+    <b>Password:</b><input type="password" />
+</p>
+
+<p>
+    <b>Gender:</b><input  name="gen" type='radio' />Male
+    <input type='radio'  name="gen" />FeMale
+</p>
+
+
+<p>
+    <b>Hobbies:</b><input type='checkbox' />Cricket
+    <input type='checkbox' />FootBall
+    <input type='checkbox' />Hockey
+
+</p>
+<p>
+    <b>Photo:</b>
+    <input type='file' />
+</p>
+
+        <p>
+    <b>Country:</b>
+    <select>
+        <option>India</option>
+        <option>US</option>
+        <option>Aus</option>
+
+
+    </select>
+</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
